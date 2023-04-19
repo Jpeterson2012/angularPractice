@@ -15,3 +15,7 @@ a{
     color: #212F3D;
     margin: 0px 10px;
 }
+.change-font{
+    font-size: 26px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

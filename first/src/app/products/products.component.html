@@ -7,7 +7,7 @@
 
 <ng-container *ngFor="let p of products">
     <ng-container *ngIf="searchText === '' || p.name.toLowerCase().includes(searchText)">
-        <div *ngIf="productsCountRadioButton === 'All' || productsCountRadioButton === p.available">
+        <div [appProducthigh]="p.price === mostExpensive"  *ngIf="productsCountRadioButton === 'All' || productsCountRadioButton === p.available">
             <div class="product-container" [ngStyle]="{backgroundColor: p.available === 'Available' ? '#D5F5E3' : '#FADBD8'}">
                 <div class="image-container"><img [src]="p.image" alt="" style="max-height: 50px; max-width: 50px;"></div>
                 <div>

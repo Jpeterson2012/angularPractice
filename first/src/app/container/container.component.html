@@ -1,9 +1,18 @@
 <div class="wrapper">
-    <!--<app-nav></app-nav> -->
-    <!-- <div app-nav></div> --> 
-    <div class="app-nav"></div>
+    <div class="app-nav">
+    <a href="#">HOME</a>
+    <!-- <p #paragraph>This is a paragraph</p>     -->
+    </div>
     <app-header></app-header>
     <app-notification></app-notification>
-    <!-- <app-search></app-search> -->
+    <!-- {{ notifComp.sayHello() }} -->
+    <div>
+        <label>DOB: </label>
+        <input type="date" #dobinput (blur)="calculateAge()">
+    </div>
+    <div>
+        <label>Age: </label>
+        <input type="text" #ageinput>
+    </div>
     <app-products></app-products>
 </div>

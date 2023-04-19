@@ -3,10 +3,29 @@
         <h2>{{ sitename }}</h2>
     </div>
     <div class = "site-menu">
-        <a href="#">HOME</a>
+        <!-- <a href="#">HOME</a> -->
+        <ng-content></ng-content>
         <a href="#">ABOUT</a>
         <a href="#">CONTACT</a>
         <a href="#">CART</a>
         <a href="#">PRODUCTS</a>
     </div>
+</div>
+
+<div class="mini-container" setBackground appHover>
+    <p>Hello</p>
+</div>
+<div appHighlight appHover>
+    <p>Hello</p>
+</div>
+<div [appBetterhighlight]="'red'" [defaultColor]="'yellow'">
+    <p>Hello</p>
+</div>
+
+<div [appClass]="{'site-name': false, 'change-font': true}">
+    <p>Hello</p>
+</div>
+
+<div [appStyle]="{backgroundColor: active ? 'Green' : 'Red', color: 'brown', 'font-weight': '900'}">
+    <p>Hello</p>
 </div>

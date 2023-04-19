@@ -21,4 +21,8 @@ export class NotificationComponent implements OnInit {
   closeNotification(){
     this.displayNotification = true;
   }
+
+  sayHello(){
+    console.log('Hello from the notification class');
+  }
 }

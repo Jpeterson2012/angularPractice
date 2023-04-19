@@ -31,3 +31,9 @@
     padding: 2px 10px;
     font-size: 12px;
 }
+
+.highlight{
+    background-color: #ddd;
+    border: #FF5722 3px solid;
+    border-radius: 5px;
+}
