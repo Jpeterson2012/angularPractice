@@ -17,6 +17,9 @@ import { BetterhighlightDirective } from './CustomDirectives/betterhighlight.dir
 import { ClassDirective } from './CustomDirectives/class.directive';
 import { ProducthighDirective } from './CustomDirectives/producthigh.directive';
 import { StyleDirective } from './CustomDirectives/style.directive';
+import { IfDirective } from './CustomDirectives/if.directive';
+import { EnrollService } from './Services/enroll.service';
+import { AdduserComponent } from './adduser/adduser.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +37,15 @@ import { StyleDirective } from './CustomDirectives/style.directive';
     BetterhighlightDirective,
     ClassDirective,
     ProducthighDirective,
-    StyleDirective
+    StyleDirective,
+    IfDirective,
+    AdduserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EnrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

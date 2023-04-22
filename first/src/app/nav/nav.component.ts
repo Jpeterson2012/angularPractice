@@ -18,4 +18,12 @@ export class NavComponent implements OnInit, AfterContentInit {
   @ContentChild('paragraph') childage!: ElementRef;
 
   active: boolean = false;
+
+  display: boolean = false;
+
+  occupation: string = 'teacher';
+
+  DisplayNotice(){
+    this.display = true;
+  }
 }

@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { EnrollService } from '../Services/enroll.service';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
+  //providers: [EnrollService]
 })
 export class ProductsComponent implements OnInit {
-  constructor() {}
+  constructor(private enrollService: EnrollService) {}
 
 ngOnInit(): void {
   
@@ -53,4 +55,14 @@ getExpensive(){
   }
     return max;
 }
+
+// DisplayMessage(value: string){
+//   alert('Thank you for expressing interest in ' + value + ', but there is a freeze!');
+//}
+title: string = 'lol';
+
+OnEnroll(){
+this.enrollService.DisplayMessage(this.title);
+}
+
 }
